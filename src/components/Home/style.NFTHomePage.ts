@@ -28,15 +28,18 @@ export const NFTCard = styled.div`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 20px;
   padding: 20px;
-  display: inline-block;
   max-width: 300px;
   width: 100%;
   height: 130px;
-`;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
 
-export const NFTImage = styled.img`
-  max-width: 100%;
-  height: auto;
+  &:hover {
+    background: #676767;
+  }
 `;
 
 export const NFTTitle = styled.h2`
