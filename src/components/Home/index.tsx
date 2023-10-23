@@ -1,12 +1,12 @@
 import DumbNFTMarketPlace from '@/components/Home/DumbNFTMarketPlace'
-import { useRouter } from 'next/router'
+import useCustomRouter from '@/re-usible/router'
 
 function NFTHomePage() {
 
-    const router = useRouter()
-    const manageRoutes = (key: string) => router.push(key)
+    const router = useCustomRouter()
+    const manageRoutes = (key: string) => router.navigate(key)
 
-  return <DumbNFTMarketPlace manageRoutes={manageRoutes} />
+    return <DumbNFTMarketPlace manageRoutes={manageRoutes}/>
 }
 
 export default NFTHomePage;

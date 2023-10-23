@@ -1,6 +1,6 @@
 import { nfts } from '@/statics'
 import { HomePageTypes, HomeRoutes } from '@/types/homeTypes'
-import React from 'react'
+import type { FC } from "react";
 import {
     CardWrapper,
     Header,
@@ -11,7 +11,7 @@ import {
     Wrapper
 } from '@/components/Home/style.NFTHomePage'
 
-const DumbNFTMarketPlace: React.FC<HomeRoutes> = ({manageRoutes}) => (
+const DumbNFTMarketPlace: FC<HomeRoutes> = ({manageRoutes}) => (
     <Wrapper>
         <Header>
             <Title>NFT Marketplace</Title>
